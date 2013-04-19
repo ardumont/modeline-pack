@@ -14,7 +14,8 @@
     (hi-lock-mode             . "")
     (python-mode              . "Py")
     (emacs-lisp-mode          . "EL")
-    (markdown-mode            . "md"))
+    (markdown-mode            . "md")
+    (magit-mode               . "ma"))
   "Alist for `clean-mode-line'.
 
 When you add a new element to the alist, keep in mind that you
