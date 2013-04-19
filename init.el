@@ -16,7 +16,8 @@
     (emacs-lisp-mode          . "EL")
     (markdown-mode            . "md")
     (magit-mode               . "ma")
-    (haskell-mode             . "ha"))
+    (haskell-mode             . "ha")
+    (tuareg-mode              . "ml"))
   "Alist for `clean-mode-line'.
 
 When you add a new element to the alist, keep in mind that you
