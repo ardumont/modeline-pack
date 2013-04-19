@@ -15,7 +15,7 @@
     (python-mode              . "Py")
     (emacs-lisp-mode          . "EL")
     (markdown-mode            . "md")
-    (magit-mode               . "ma")
+    (magit                    . "ma")
     (haskell-mode             . "ha")
     (tuareg-mode              . "ml"))
   "Alist for `clean-mode-line'.
