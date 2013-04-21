@@ -17,7 +17,8 @@
     (markdown-mode            . "md")
     (magit                    . "ma")
     (haskell-mode             . "ha")
-    (tuareg-mode              . "ml"))
+    (tuareg-mode              . "ml")
+    (flymake-mode             . "fm"))
   "Alist for `clean-mode-line'.
 
 When you add a new element to the alist, keep in mind that you
