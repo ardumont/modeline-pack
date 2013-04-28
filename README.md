@@ -8,5 +8,5 @@ This is a pack to manipulate the emacs-modeline (cf. http://blog.jr0cket.co.uk/2
 in your .emacs-live.el, add this:
 
 ```el
-(live-add-packs '(modeline-pack))
+(live-add-packs '("/path/to/modeline-pack"))
 ```
