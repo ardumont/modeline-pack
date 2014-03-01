@@ -1,3 +1,9 @@
+;;; modeline-pack.el --- Modeline setup
+
+;;; Commentary:
+
+;;; Code:
+
 (defvar mode-line-cleaner-alist
   `((auto-complete-mode       . " α")
     (yas-minor-mode           . " γ")
@@ -44,5 +50,4 @@ want to use in the modeline *in lieu of* the original.")
 ;;; Greek letters - C-u C-\ greek ;; C-\ to revert to default
 ;;; ς ε ρ τ υ θ ι ο π α σ δ φ γ η ξ κ λ ζ χ ψ ω β ν μ
 
-;; Load bindings config
-;;(live-load-config-file "bindings.el")
+;;; modeline-pack ends here
