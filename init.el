@@ -15,6 +15,8 @@
     (elisp-slime-nav-mode     . " δ")
     (nrepl-mode               . " ηζ")
     (nrepl-interaction-mode   . " ηζ")
+    (cider-mode               . " ηζ")
+    (cider-interaction        . " ηζ")
     ;; Major modes
     (clojure-mode             . "λ")
     (hi-lock-mode             . "")
