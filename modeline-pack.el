@@ -52,4 +52,5 @@ want to use in the modeline *in lieu of* the original.")
 ;;; Greek letters - C-u C-\ greek ;; C-\ to revert to default
 ;;; ς ε ρ τ υ θ ι ο π α σ δ φ γ η ξ κ λ ζ χ ψ ω β ν μ
 
+(provide 'modeline-pack)
 ;;; modeline-pack ends here
