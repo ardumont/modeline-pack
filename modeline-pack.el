@@ -18,15 +18,16 @@
     (cider-mode               . " ηζ")
     (cider-interaction        . " ηζ")
     ;; Major modes
-    (clojure-mode             . "λ")
+    (clojure-mode             . "cλ")
     (hi-lock-mode             . "")
-    (python-mode              . "Py")
-    (emacs-lisp-mode          . "EL")
+    (python-mode              . "pλ")
+    (emacs-lisp-mode          . "eλ")
     (markdown-mode            . "md")
     (magit                    . "ma")
-    (haskell-mode             . "ha")
-    (tuareg-mode              . "ml")
-    (flymake-mode             . "fm"))
+    (haskell-mode             . "hλa")
+    (tuareg-mode              . "mλ")
+    (flymake-mode             . "fm")
+    (js2-mode                 . "jλ"))
   "Alist for `clean-mode-line'.
 
 When you add a new element to the alist, keep in mind that you
