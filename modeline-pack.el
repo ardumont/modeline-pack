@@ -35,6 +35,7 @@ must pass the correct minor/major mode symbol and a string you
 want to use in the modeline *in lieu of* the original.")
 
 (defun clean-mode-line ()
+  "Pretty symbol for the modeline."
   (interactive)
   (loop for cleaner in mode-line-cleaner-alist
         do (let* ((mode (car cleaner))
@@ -46,9 +47,7 @@ want to use in the modeline *in lieu of* the original.")
              (when (eq mode major-mode)
                (setq mode-name mode-str)))))
 
-
 (add-hook 'after-change-major-mode-hook 'clean-mode-line)
-
 
 ;;; Greek letters - C-u C-\ greek ;; C-\ to revert to default
 ;;; ς ε ρ τ υ θ ι ο π α σ δ φ γ η ξ κ λ ζ χ ψ ω β ν μ
