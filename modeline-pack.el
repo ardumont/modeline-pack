@@ -27,7 +27,7 @@
       (clojure-mode             "cλ")
       (hi-lock-mode             "")
       (python-mode              "pλ")
-      (emacs-lisp-mode          "eλ2")
+      (emacs-lisp-mode          "eλ")
       (markdown-mode            "md")
       (magit                    "ma")
       (haskell-mode             "hλa")
