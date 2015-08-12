@@ -40,6 +40,11 @@
 When you add a new element to the alist, keep in mind that you
 must pass the correct minor/major mode symbol and a string you
 want to use in the modeline instead of the original.")
+
+(defun modeline-pack--log (&rest args)
+  "Log the message ARGS in the mini-buffer."
+  (apply #'message (format "Modeline Pack - %s" (car args)) (cdr args)))
+
 (defun modeline-pack-clean-mode-line ()
   "Pretty symbol for the modeline."
   (interactive)
@@ -50,6 +55,20 @@ want to use in the modeline instead of the original.")
               (when (assq mode minor-mode-alist)
                 (diminish mode (s-trim-right mode-str))))))
         modeline-pack-clean-mode-alist))
+
+(defun modeline-pack--abbrev-to-mode-name (abbrev-name)
+  "Given an ABBREV-NAME, return the corresponding mode if it exists."
+  (-filter (lambda (mmode)
+             (-let (((mode s) mmode))
+               (and (stringp s) (string-match-p abbrev-name s)))) minor-mode-alist))
+
+(defun modeline-pack-abbrev-to-mode-name ()
+  "Discover the full name of a modeline abbreviation."
+  (interactive)
+  (let ((abbrev (read-string "modeline abbreviation: ")))
+    (->> abbrev
+         modeline-pack--abbrev-to-mode-name
+         (modeline-pack--log "%s -> %s" abbrev))))
 
 (modeline-pack-clean-mode-line)
 
