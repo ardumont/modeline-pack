@@ -4,9 +4,9 @@
 
 ;;; Code:
 
-(use-package dash)
-(use-package s)
-(use-package diminish)
+(require 'dash)
+(require 's)
+(require 'diminish)
 
 (defvar modeline-pack-clean-mode-alist
   `((auto-complete-mode       " α")
